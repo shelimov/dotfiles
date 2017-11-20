@@ -1,35 +1,46 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+
+call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'mhartington/oceanic-next'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+Plugin 'rhysd/clever-f.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
 Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
+Plugin 'othree/yajs.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'rgarver/Kwbd.vim'
+Plugin 'qpkorr/vim-bufkill'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mildred/vim-bufmru'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'raimondi/delimitmate'
 Plugin 'mileszs/ack.vim'
+Plugin 'ryanoasis/vim-devicons'
+call vundle#end()
 filetype plugin indent on
 
 syntax enable
 " for vim 7
 set encoding=utf8
-set guifont=Hack\ 10
-set t_Co=256
+set guifont=FuraCode\ Nerd\ Font\ Mono\ 11
+colorscheme OceanicNext
 set number
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set gcr=a:blinkon0 "Disable cursor blink
+set guiheadroom=0
+set hlsearch
+set incsearch
+let g:clever_f_ignore_case = 1
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
 let g:session_autosave_periodic = 1
@@ -40,6 +51,7 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --vimgrep'
 let g:nerdtree_tabs_autoclose = 0
 let g:bufferline_echo = 0
+let g:airline_theme='oceanicnext'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ''
@@ -83,4 +95,12 @@ set guioptions-=F  "remove footer
 map <C-p> :NERDTreeToggle %<CR>
 map <Tab> :BufMRUNext<CR>
 map <S-Tab> :BufMRUPrev<CR>
-colorscheme OceanicNext
+imap <silent> <BS> <C-R>=YcmOnDeleteChar()<CR><Plug>delimitMateBS
+map <C-q> :BD<cr>
+
+function! YcmOnDeleteChar()
+  if pumvisible()
+    return "\<C-y>"
+  endif
+  return ""
+endfunction
