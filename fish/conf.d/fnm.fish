@@ -1,0 +1,1 @@
+/home/shelimov/.config/fisherman/fnm/conf.d/fnm.fish

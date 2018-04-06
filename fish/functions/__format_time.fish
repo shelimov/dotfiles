@@ -1,0 +1,1 @@
+/home/shelimov/.config/fisherman/pure/__format_time.fish
