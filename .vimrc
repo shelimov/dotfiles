@@ -5,8 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mhartington/oceanic-next'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
 Plugin 'rhysd/clever-f.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
@@ -15,6 +13,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'qpkorr/vim-bufkill'
@@ -27,6 +26,8 @@ Plugin 'raimondi/delimitmate'
 Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 call vundle#end()
 filetype plugin indent on
 
@@ -34,13 +35,18 @@ syntax enable
 " for vim 7
 set encoding=utf8
 set guifont=FuraCode\ Nerd\ Font\ Mono\ 11
+let g:oceanic_next_terminal_bold = 0
 colorscheme OceanicNext
+highlight Bold gui=NONE guifg=NONE guibg=NONE cterm=NONE
+set cursorline
+highlight CursorLine term=bold cterm=bold guibg=Grey25
 set number
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set gcr=a:blinkon0 "Disable cursor blink
 set guiheadroom=0
 set hlsearch
 set incsearch
+set t_md=
 let g:clever_f_ignore_case = 1
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'

@@ -52,7 +52,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git frontend-search sublime ssh-agent colored-man-pages)
+plugins=(git frontend-search sublime colored-man-pages npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source /usr/share/nvm/init-nvm.sh
