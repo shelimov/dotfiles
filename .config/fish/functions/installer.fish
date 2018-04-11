@@ -1,1 +1,0 @@
-/home/shelimov/.config/fisherman/pure/installer.fish

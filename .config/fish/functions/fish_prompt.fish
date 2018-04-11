@@ -1,1 +1,1 @@
-/home/shelimov/.config/fisherman/pure/fish_prompt.fish
+/home/shelimov/.config/fish/functions/theme-pure/fish_prompt.fish
