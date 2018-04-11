@@ -42,7 +42,7 @@ abbr gdt 'git diff-tree --no-commit-id --name-only -r'
 abbr gdw 'git diff --word-diff'
 
 abbr gf 'git fetch'
-abbr gfa 'git fetch --all --prune'
+abbr gfp 'git fetch -p'
 abbr gfo 'git fetch origin'
 
 abbr gl 'git pull'
