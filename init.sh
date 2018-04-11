@@ -1,18 +1,19 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 rm ~/.zshrc
-ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s $DIR/.zshrc ~/.zshrc
 
 rm ~/.eslintrc
-ln -s ~/dotfiles/.eslintrc ~/.eslintrc
+ln -s $DIR/.eslintrc ~/.eslintrc
 
 rm ~/.gitconfig
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s $DIR/.gitconfig ~/.gitconfig
 
 rm ~/.vimrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s $DIR/.vimrc ~/.vimrc
 
 rm ~/.tern-config
-ln -s ~/dotfiles/.tern-config ~/.tern-config
+ln -s $DIR/.tern-config ~/.tern-config
 
-rm -rf ~/.config/fish
-ln -s ~/dotfiles/fish ~/.config/fish
+. $DIR/.config/initConfig.sh

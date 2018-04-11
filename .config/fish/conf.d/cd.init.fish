@@ -1,0 +1,1 @@
+/home/shelimov/.config/fisherman/cd/init.fish
