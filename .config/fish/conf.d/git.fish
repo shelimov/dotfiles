@@ -66,7 +66,7 @@ abbr gmum 'git merge upstream/master'
 abbr gp 'git push'
 abbr gpd 'git push --dry-run'
 abbr gpoat 'git push origin --all; and git push origin --tags'
-abbr gpu 'git push upstream'
+abbr gpuo 'git push -u origin'
 abbr gpv 'git push -v'
 
 abbr gr 'git remote'
