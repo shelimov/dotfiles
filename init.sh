@@ -16,4 +16,7 @@ ln -s $DIR/.vimrc ~/.vimrc
 rm ~/.tern-config
 ln -s $DIR/.tern-config ~/.tern-config
 
+rm ~/.babelrc
+ln -s $DIR/.babelrc ~/.babelrc
+
 . $DIR/.config/initConfig.sh
