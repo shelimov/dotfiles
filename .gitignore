@@ -23,3 +23,4 @@
 .vim/bundle/vim-surround/
 .vim/bundle/vim-trailing-whitespace/
 .vim/bundle/yajs.vim/
+.vim/backups/*
