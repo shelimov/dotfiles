@@ -13,6 +13,9 @@ ln -s $DIR/.gitconfig ~/.gitconfig
 rm ~/.vimrc
 ln -s $DIR/.vimrc ~/.vimrc
 
+rm ~/.vim
+ln -s $DIR/.vim ~/.vim
+
 rm ~/.tern-config
 ln -s $DIR/.tern-config ~/.tern-config
 
