@@ -1,4 +1,4 @@
-.config/fish/fishd.shelimov
+.config/fish/fishd.*
 .vim/bundle/YouCompleteMe/
 .vim/bundle/ack.vim/
 .vim/bundle/clever-f.vim/
