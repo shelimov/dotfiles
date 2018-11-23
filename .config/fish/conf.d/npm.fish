@@ -1,5 +1,0 @@
-abbr nrd 'npm run dev'
-abbr ni 'npm install'
-abbr nr 'npm remove'
-abbr ns 'npm start'
-abbr nrs 'npm restart'
