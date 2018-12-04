@@ -4,4 +4,7 @@ abbr ns 'npm start'
 abbr nrs 'npm restart'
 abbr np 'npm publish'
 abbr nu 'npm unpublish'
+abbr nrl 'npm run lint'
+abbr nrt 'npm run test'
+abbr nrta 'npm run test-all'
 
