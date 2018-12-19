@@ -41,6 +41,7 @@ abbr gdw 'git diff --word-diff'
 abbr gf 'git fetch'
 abbr gfp 'git fetch -p'
 abbr gfo 'git fetch origin'
+#abbr gfgr 'git fetch; git rebase -m origin/'
 
 abbr gl 'git pull'
 abbr glg 'git log --stat'
