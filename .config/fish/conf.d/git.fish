@@ -63,7 +63,7 @@ abbr gmt 'git mergetool --no-prompt'
 abbr gmtvim 'git mergetool --no-prompt --tool vimdiff'
 
 abbr gp 'git push -v'
-abbr gpd 'git push --dry-run'
+#abbr gpd 'git push --dry-run'
 abbr gpf 'git push -v -f'
 
 abbr gr 'git remote'
