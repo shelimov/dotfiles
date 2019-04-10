@@ -1,0 +1,7 @@
+abbr ya 'yarn --ignore-engines add '
+abbr yj 'yarn jest'
+abbr yl 'yarn lint'
+abbr cpj 'cd packages/jsfiller3'
+abbr cps 'cd packages/snfiller'
+abbr cj 'cd ~/jsfiller3'
+abbr ys 'yarn start'
