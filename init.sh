@@ -22,4 +22,7 @@ ln -s $DIR/.tern-config ~/.tern-config
 rm ~/.babelrc
 ln -s $DIR/.babelrc ~/.babelrc
 
+rm ~/.hushlogin
+ln -s $DIR/.hushlogin ~/.hushlogin
+
 . $DIR/.config/initConfig.sh
