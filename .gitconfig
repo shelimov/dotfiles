@@ -8,5 +8,15 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [commit]
 	gpgsign = true
+[merge]
+    conflictstyle = diff3
+[status]
+    showUntrackedFiles = all
+[diff]
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [gpg]
 	program = /usr/local/bin/gpg
