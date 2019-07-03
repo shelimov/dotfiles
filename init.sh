@@ -25,4 +25,7 @@ ln -s $DIR/.babelrc ~/.babelrc
 rm ~/.hushlogin
 ln -s $DIR/.hushlogin ~/.hushlogin
 
+rm ~/.gitignore_global
+ln -s $DIR/.gitignore_global ~/.gitignore_global
+
 . $DIR/.config/initConfig.sh
