@@ -4,6 +4,7 @@
 	signingkey = F7C242833556056B
 [core]
 	editor = vim
+    pager = "diff-so-fancy | less --tabs=4 -RFX"
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [commit]
@@ -12,11 +13,17 @@
     conflictstyle = diff3
 [status]
     showUntrackedFiles = all
-[diff]
-    tool = icdiff
-[difftool]
-    prompt = false
-[difftool "icdiff"]
-    cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [gpg]
 	program = /usr/local/bin/gpg
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
