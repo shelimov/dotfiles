@@ -28,4 +28,7 @@ ln -s $DIR/.hushlogin ~/.hushlogin
 rm ~/.gitignore_global
 ln -s $DIR/.gitignore_global ~/.gitignore_global
 
+rm ~/.gnupg
+ln -s $DIR/.gnupg ~/.gnupg
+
 . $DIR/.config/initConfig.sh
