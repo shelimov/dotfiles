@@ -12,3 +12,5 @@ end
 set pure_symbol_prompt "~>"
 set pure_symbol_git_dirty "✸"
 abbr lsa "ls -a"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
