@@ -1,9 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-rm ~/.zshrc
-ln -s $DIR/.zshrc ~/.zshrc
-
 rm ~/.eslintrc
 ln -s $DIR/.eslintrc ~/.eslintrc
 
