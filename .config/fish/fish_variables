@@ -4,6 +4,7 @@ SETUVAR Z_DATA_DIR:/Users/shelimov/\x2elocal/share/z
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cj:cd\x20\x7e/jsfiller
 SETUVAR _fish_abbr_cpj:cd\x20packages/jsfiller3
 SETUVAR _fish_abbr_cps:cd\x20packages/snfiller
@@ -133,6 +134,7 @@ SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:bryellow\x1e\x2d\x2dbold
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:bryellow
@@ -141,6 +143,7 @@ SETUVAR fish_color_quote:yellow
 SETUVAR fish_color_redirection:brblue
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
@@ -158,7 +161,7 @@ SETUVAR pure_color_current_directory:pure_color_primary
 SETUVAR pure_color_danger:\x1b\x5b31m
 SETUVAR pure_color_dark:\x1b\x5b30m
 SETUVAR pure_color_git_branch:pure_color_mute
-SETUVAR pure_color_git_dirty:pure_color_mute
+SETUVAR pure_color_git_dirty:ff7400
 SETUVAR pure_color_git_unpulled_commits:pure_color_info
 SETUVAR pure_color_git_unpushed_commits:pure_color_info
 SETUVAR pure_color_info:\x1b\x5b36m
@@ -167,8 +170,8 @@ SETUVAR pure_color_light:\x1b\x5b37m
 SETUVAR pure_color_mute:\x1b\x5b90m
 SETUVAR pure_color_normal:\x1b\x5b30m\x1b\x28B\x1b\x5bm
 SETUVAR pure_color_primary:\x1b\x5b34m
-SETUVAR pure_color_prompt_on_error:pure_color_danger
-SETUVAR pure_color_prompt_on_success:pure_color_success
+SETUVAR pure_color_prompt_on_error:brred\x1e\x2d\x2dbold
+SETUVAR pure_color_prompt_on_success:green\x1e\x2d\x2dbold
 SETUVAR pure_color_ssh_hostname:pure_color_mute
 SETUVAR pure_color_ssh_separator:pure_color_mute
 SETUVAR pure_color_ssh_user_normal:pure_color_mute

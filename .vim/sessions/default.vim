@@ -1,6 +1,6 @@
 " ~/dotfiles/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 20 August 2018 at 12:44:17.
+" Created by session.vim 2.13.1 on 09 January 2020 at 09:52:58.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -17,18 +17,22 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
+silent tabonly
 cd ~/dotfiles/.vim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
 argglobal
-silent! argdel *
+%argdel
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
 wincmd t
-set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
 argglobal
 enew
 setlocal fdm=manual
@@ -40,7 +44,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 tabnext 1
-if exists('s:wipebuf')
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
 " unlet! s:wipebuf
