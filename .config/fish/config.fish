@@ -1,5 +1,6 @@
 if test $TERM_PROGRAM="Terminus-Sublime"
-    # set pure_color_current_directory yellow
+    set --universal pure_color_current_directory yellow
+    set --universal pure_color_normal yellow
     set --universal pure_color_prompt_on_success green
     set --universal pure_color_prompt_on_error brred
     set --universal pure_color_git_dirty ff7400
