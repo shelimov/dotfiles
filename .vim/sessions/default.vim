@@ -1,6 +1,6 @@
 " ~/dotfiles/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 09 January 2020 at 09:52:58.
+" Created by session.vim 2.13.1 on 15 September 2020 at 18:32:50.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -51,7 +51,7 @@ endif
 set winheight=1 winwidth=20 shortmess=filnxtToOc
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
-if file_readable(s:sx)
+if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &so = s:so_save | let &siso = s:siso_save

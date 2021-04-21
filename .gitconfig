@@ -30,3 +30,4 @@
 	whitespace = red reverse
 [pull]
 	rebase = false
+	ff = only
