@@ -15,4 +15,3 @@ set --universal pure_symbol_git_dirty "✸"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 abbr lsa "ls -a"
-source ~/.asdf/asdf.fish

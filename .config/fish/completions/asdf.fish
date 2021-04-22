@@ -1,1 +1,0 @@
-/home/shelimov/.asdf/completions/asdf.fish
