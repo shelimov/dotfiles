@@ -1,3 +1,4 @@
 .config/fish/fish_variables
 .config/fish/fishd.*
 .DS_Store
+.vim/sessions/default.vim
