@@ -1,5 +1,5 @@
-abbr ya 'yarn --ignore-engines add '
+abbr yi 'yarn install'
 abbr yj 'yarn jest'
 abbr yl 'yarn lint'
 abbr ys 'yarn start'
-abbr y 'yarn --ignore-engines'
+abbr y 'yarn'
